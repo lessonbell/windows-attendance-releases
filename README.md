@@ -23,7 +23,7 @@
   <a href="#help">Help</a>
 </p>
 
-> **Version 1.1.1 is available.** Download the portable ZIP, extract the whole folder and open `LessonBellAttendance.exe`.
+> **Version 1.1.2 is available.** Download the portable ZIP, extract the whole folder and open `LessonBellAttendance.exe`.
 
 ## A simple tool for a busy front desk
 
@@ -82,21 +82,21 @@ Check the message shown in the app. If a request times out or the internet conne
 
 ## Updates
 
-Version 1.1.1 uses a direct-launch portable ZIP with manual updates. It removes the native update launcher and does not check for updates in the background or replace itself.
+Version 1.1.2 checks for a new public release once when you open the app. A newer version appears in the main window with a Download new version button. You can also choose Check for updates in Settings or the tray menu. Checks do not interrupt attendance, and the app never replaces itself.
 
-1. Choose **Download latest** in Settings or the tray menu, or use the official download link above.
+1. Choose **Download new version** when prompted, **Download latest** in Settings or the tray menu, or use the official download link above.
 2. Extract the complete new ZIP into a new folder.
 3. Exit the old app through its system tray menu, then open the new `LessonBellAttendance.exe`.
 
 Saved connection, branch, scanner, sound and notification settings are preserved on the same computer under the same Windows account. Clicking X only hides the app; use the tray menu to exit completely. Unsaved changes and the current scan list are not carried over.
 
-Users of 1.0.x or 1.1.0 must download the new ZIP manually. The old automatic updater cannot install this direct-ZIP release format. No `current`, `packages` or `Update.exe` is needed.
+Users of 1.0.x, 1.1.0 or 1.1.1 must download 1.1.2 manually once to receive future update notices. The old automatic updater cannot install this direct-ZIP release format. No `current`, `packages` or `Update.exe` is needed.
 
 ## Privacy
 
 The app reads only the selected serial scanner and does not capture other keyboard input. Scanner keys are encrypted for the current Windows account using Windows DPAPI. Diagnostic logs do not contain complete scanner keys or raw QR tokens.
 
-Your centre supplies its API URL and scanner key during setup; those details are not included in the public download.
+Your centre supplies its API URL and scanner key during setup; those details are not included in the public download. Update checks contact the public GitHub release API with the app version only. Your attendance API URL, scanner key, branch and scanned QR codes are never sent to GitHub.
 
 ## Help
 
