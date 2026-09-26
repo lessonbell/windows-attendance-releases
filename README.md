@@ -23,7 +23,7 @@
   <a href="#help">Help</a>
 </p>
 
-> **Version 1.1.0 is available.** Download the portable ZIP, extract the whole folder and open `LessonBellAttendance.exe`.
+> **Version 1.1.1 is available.** Download the portable ZIP, extract the whole folder and open `LessonBellAttendance.exe`.
 
 ## A simple tool for a busy front desk
 
@@ -39,7 +39,7 @@ The LessonBell Windows Attendance Assistant reads QR codes from a selected USB s
 
 **[Download the latest Portable ZIP →](https://github.com/lessonbell/windows-attendance-releases/releases/latest/download/LessonBell.AttendanceScanner-win-stable-Portable.zip)**
 
-Read the **[latest release notes](https://github.com/lessonbell/windows-attendance-releases/releases/latest)**.
+Read the **[latest release notes](https://github.com/lessonbell/windows-attendance-releases/releases/latest)**. `SHA256SUMS.txt` on the release page can verify download integrity; it is not a Windows publisher certificate.
 
 Download `LessonBell.AttendanceScanner-win-stable-Portable.zip` from its **Assets** section. GitHub's **Source code (zip)** and **Source code (tar.gz)** links are not the app.
 
@@ -62,7 +62,7 @@ Other Zebra, Honeywell and USB scanners require model-specific testing before th
 
 1. Download the **Portable ZIP** from the Releases page.
 2. Extract the **entire ZIP** to a writable folder, such as Desktop or Documents.
-3. Open the outer `LessonBellAttendance.exe`.
+3. Open `LessonBellAttendance.exe` directly.
 4. Ask your centre administrator for the API URL and scanner key from **Developer → API Settings** in LessonBell CMS.
 5. Enter those details, validate the connection and select your authorised branch.
 6. Select your scanner, which must already be configured for **USB virtual serial mode**, and test a QR code.
@@ -82,9 +82,15 @@ Check the message shown in the app. If a request times out or the internet conne
 
 ## Updates
 
-Version 1.1.0 includes optional in-app updates from official LessonBell releases. When an update is offered, you choose when to install it. Saved connection, branch, scanner, sound and notification settings are preserved across an update.
+Version 1.1.1 uses a direct-launch portable ZIP with manual updates. It removes the native update launcher and does not check for updates in the background or replace itself.
 
-Older 1.0.x copies require one manual download of an updater-enabled release first.
+1. Choose **Download latest** in Settings or the tray menu, or use the official download link above.
+2. Extract the complete new ZIP into a new folder.
+3. Exit the old app through its system tray menu, then open the new `LessonBellAttendance.exe`.
+
+Saved connection, branch, scanner, sound and notification settings are preserved on the same computer under the same Windows account. Clicking X only hides the app; use the tray menu to exit completely. Unsaved changes and the current scan list are not carried over.
+
+Users of 1.0.x or 1.1.0 must download the new ZIP manually. The old automatic updater cannot install this direct-ZIP release format. No `current`, `packages` or `Update.exe` is needed.
 
 ## Privacy
 
@@ -101,3 +107,4 @@ Do not post scanner keys, QR tokens or student details in public GitHub issues.
 ---
 
 Official LessonBell app distribution and release notes.
+
