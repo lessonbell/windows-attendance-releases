@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/lessonbell/windows-attendance-releases/releases"><strong>View releases</strong></a>
+  <a href="https://github.com/lessonbell/windows-attendance-releases/releases/latest/download/LessonBell.AttendanceScanner-win-stable-Portable.zip"><strong>Download for Windows</strong></a>
   &nbsp; · &nbsp;
   <a href="#quick-start">Quick start</a>
   &nbsp; · &nbsp;
@@ -23,7 +23,7 @@
   <a href="#help">Help</a>
 </p>
 
-> **Public release coming soon.** The first public app package is being prepared. There is no app download available from this repository yet.
+> **Version 1.1.0 is available.** Download the portable ZIP, extract the whole folder and open `LessonBellAttendance.exe`.
 
 ## A simple tool for a busy front desk
 
@@ -37,9 +37,11 @@ The LessonBell Windows Attendance Assistant reads QR codes from a selected USB s
 
 ## Downloads
 
-Official app packages will appear on the **[Releases page](https://github.com/lessonbell/windows-attendance-releases/releases)**.
+**[Download the latest Portable ZIP →](https://github.com/lessonbell/windows-attendance-releases/releases/latest/download/LessonBell.AttendanceScanner-win-stable-Portable.zip)**
 
-When a release is available, download `LessonBell.AttendanceScanner-win-stable-Portable.zip` from its **Assets** section. GitHub's **Source code (zip)** and **Source code (tar.gz)** links are not the app.
+Read the **[latest release notes](https://github.com/lessonbell/windows-attendance-releases/releases/latest)**.
+
+Download `LessonBell.AttendanceScanner-win-stable-Portable.zip` from its **Assets** section. GitHub's **Source code (zip)** and **Source code (tar.gz)** links are not the app.
 
 ## Requirements
 
@@ -57,8 +59,6 @@ When a release is available, download `LessonBell.AttendanceScanner-win-stable-P
 Other Zebra, Honeywell and USB scanners require model-specific testing before they can be listed as supported. Windows 98, XP, 7, 8, 8.1, 32-bit Windows and Windows on ARM are not supported.
 
 ## Quick start
-
-Once the first public release is available:
 
 1. Download the **Portable ZIP** from the Releases page.
 2. Extract the **entire ZIP** to a writable folder, such as Desktop or Documents.
@@ -82,7 +82,7 @@ Check the message shown in the app. If a request times out or the internet conne
 
 ## Updates
 
-In-app updates will be available with updater-enabled releases. When an update is offered, you choose when to install it. Saved connection, branch, scanner, sound and notification settings are preserved across an update.
+Version 1.1.0 includes optional in-app updates from official LessonBell releases. When an update is offered, you choose when to install it. Saved connection, branch, scanner, sound and notification settings are preserved across an update.
 
 Older 1.0.x copies require one manual download of an updater-enabled release first.
 
@@ -94,7 +94,7 @@ Your centre supplies its API URL and scanner key during setup; those details are
 
 ## Help
 
-Contact your centre administrator or your LessonBell support contact. Include your app version, Windows version, scanner model and the error message. If Windows blocks the app from opening, contact support.
+Contact your centre administrator or your LessonBell support contact. Include your app version, Windows version, scanner model and the error message. The app is not yet Windows code-signed. Windows may show an unknown-publisher warning or block it under some security policies. If blocked, contact support; do not disable security protection.
 
 Do not post scanner keys, QR tokens or student details in public GitHub issues.
 
